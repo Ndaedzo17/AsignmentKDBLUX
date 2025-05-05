@@ -1,0 +1,96 @@
+h1{
+    font-family: verdana;
+    border-style: solid;
+    border-width: 6px ;
+    border-color: aquamarine;
+    border-radius: 20px;
+     text-shadow: 3px 3px 5px orange;
+}
+
+p{
+    font-family: 'Lucida Sans', "courier new" ;
+    font-size: 25px ;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+h3{ 
+    font-family: 'Lucida Sans', "courier new" ;
+    font-size: 25px ;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 3px solid aquamarine;
+}
+#p1{
+    background-color: rgb(255, 94, 0);
+    border-radius:15px ;
+}
+#p2{
+    background-color:white;
+}
+
+.rectangle{
+    border: 5px solid;
+    font-size: medium;
+    width: 20px;
+    height: 20px;
+}
+#rectangle1{
+    background-color: aquamarine;
+    margin-left:auto ;
+}
+
+.box{
+    border: 100px solid;
+    font-size: 10em;
+    width: 250px; 
+    height:250px ;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+     list-style: none;
+     margin-left: 90px;
+     margin-top: 0px;
+     font-size: 20px;
+}
+ul li a{
+       text-decoration: none;
+       color:  orangered;
+       font-family: Arial;
+       font-weight: bolder;
+       transition: 0.4s ease-in-out;
+}
+
+
+ul li a:hover{
+        color: black;
+        
+}
+
+@media  (min-width:1440px) {
+        body{
+            font-size: larger;
+            
+        }
+}
+
+@media  (min-width:768px) {
+    body{
+        font-size: medium;
+        
+    }
+}
+
+@media (min-width:600px) {
+    body{
+        font-size:medium ;
+        
+    }
+}
