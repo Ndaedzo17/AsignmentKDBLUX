@@ -36,7 +36,7 @@ let slideIndex = 0;
       return;
     }
 
-    // Simulated response message
+    
     let message = "";
     switch (enquiryType) {
       case "services":
