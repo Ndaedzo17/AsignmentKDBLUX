@@ -1,48 +1,163 @@
- <html>  
-     <head> 
-        <title >KDB Luxurios Cars| About us</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KDB Luxurious Cars | About Us</title>
+  <style>
+    :root {
+      --main-color: aquamarine;
+      --text-color: white;
+      --bg-overlay: rgba(0, 0, 0, 0.7);
+      --heading-color: #fff;
+      --accent-color: black;
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        <link rel="stylesheet" href="css/theme.css">
-      
-        <link rel="stylesheet" href="style.css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        <style>
-          body{
-            background-image: url("images/backContact.jpg");
-            background-repeat: no-repeat;
-            background-position:center ;
-            background-attachment: fixed;
-            background-size: cover;
-          }
-        </style>
-      </head>
-      <body>
-        
-        <div class="menu">
-          <ul>
-        
-            <li><a href="index.html">Home</a></li>
-            <li> <a href="About Us.html">About us</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Enquiry.html">Enquiry</a></li>
-            <li><a href="Contact Us.html">Contact Us</a></li>
+    body {
+      font-family: var(--font);
+      background-image: url("images/mercedes.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--text-color);
+    }
 
-          </ul>
-        </div>
-        
-        <h1 class="main_heading"><div style="background-color: aquamarine;" id="header">About Us </div></h1>
+    .overlay {
+      background-color: var(--bg-overlay);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
 
-        <img src="images/porchSercive.jpg" width="550" style="float: left;">
+    .menu {
+      background-color: var(--main-color);
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
 
-     <b><p><h2 id="p2">  KDB LUXURIOS CARS, where style meets sophistication on every ride.
-        <p> We specialize in premium car hire for any occasion—whether 
-         its a wedding, prom, corporate event, music video, or just a night to remember.</p>
-        <p>  Our fleet of high-end vehicles and commitment to exceptional service ensures you arrive in
-           comfort, class, and confidence.</p>
-           <p>Our impressive fleet features luxury vehicles that are always clean, well-maintained, and driven by professional, punctual chauffeurs.</p>
-           <p>We proudly deliver across all 9 provinces of South Africa, ensuring that no matter where you are, luxury comes to you.</p>
-            <P> With flexible booking options, tailored packages, and a commitment to excellence, KDB Luxuri</p>
-           <p> At KDB,its not just about the destination its about the experience.</h2></p></b>
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
 
-      </body>
-</html> 
+    .menu ul li a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .menu ul li a:hover {
+      background-color: var(--accent-color);
+      color: var(--main-color);
+    }
+
+    h1 {
+      text-align: center;
+      background-color: white;
+      color: black;
+      padding: 20px 30px;
+      margin: 40px auto 30px;
+      width: fit-content;
+      border-radius: 10px;
+      font-size: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .content-wrapper img {
+      max-width: 100%;
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .text-content {
+      flex: 1;
+      color: var(--text-color);
+    }
+
+    .text-content h2 {
+      color: var(--main-color);
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-content {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .text-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <h1>About Us</h1>
+
+    <div class="content-wrapper">
+      <img src="images/porche eyes.jpg" alt="Luxury Car">
+
+      <div class="text-content">
+        <h2>KDB Luxurious Cars :: Where Style Meets Sophistication</h2>
+        <p>Welcome to <strong>KDB Luxurious Cars</strong>, your premier destination for elite car hire experiences across South Africa.</p>
+        <p>We specialize in premium vehicle rentals for weddings, proms, corporate events, music videos, and unforgettable nights out.</p>
+        <p>Our impressive fleet includes toptier vehicles that are meticulously maintained and driven by professional chauffeurs who value punctuality and excellence.</p>
+        <p>No matter where you are in the country from Johannesburg to Cape Town to Polokwane we bring luxury straight to your door.</p>
+        <p>With customizable packages, flexible booking options, and first-class service, KDB guarantees that your ride is not just transportation — it's an experience.</p>
+        <p><strong>At KDB, it's not just about getting there  it's about arriving in style.</strong></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

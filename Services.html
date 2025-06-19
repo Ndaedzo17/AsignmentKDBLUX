@@ -1,73 +1,175 @@
- <html>  
-     <head> 
-        <title >KDB Luxurios Cars| About us</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KDB Luxurious Cars | Services</title>
 
-    
-        
-        <link rel="stylesheet" href="style.css">
-        
-        <style>
-          body{
-            background-image: url("images/backContact.jpg");
-            background-repeat: no-repeat;
-            background-position:center ;
-            background-attachment: fixed;
-            background-size: cover;
-          }
+  <link rel="stylesheet" href="style.css" />
 
-        
-        </style>
-      </head>
-      <body>
-         <div class="">
-        <div class="menu">
-          <ul>
-             
-            <li> <a href="index.html">Home</a></li>
-            <li><a href="About Us.html">About us</a></li>
-            <li> <a href="Services.html">Services</a></li>
-            <li> <a href="Enquiry.html">Enquiry</a></li>
-            <li> <a href="Contact Us.html">Contact Us</a></li>
-             
-          </ul>
-        </div>
+  <style>
+    :root {
+      --primary: aquamarine;
+      --primary-dark: #24ccc4;
+      --text-light: #ffffff;
+      --text-dark: #000000;
+      --bg-overlay: rgba(0, 0, 0, 0.6);
+      --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
 
-        <h1 class="main_heading"><div style="background-color: aquamarine;"  id="header">SERVICES </div></h1>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-       <b><h2 id="p1"> 🔧 1. TYPES OF CARS WE OFFER:
-        <br>
-        KDB : Premium Price List
-        “Where Elegance Meets Performance”
-        <br>
-       <br>
-         Currency: (ZAR)
-         <br>
-         Price Range: R4,900 - R20,000
-         <br>
-         <br>
-SUVs :PRICE RANGE: R4,900 - R9,000.
-<br>
-Coupes :PRICE RANGE: R5,900 - R11,000.
-<br>
-Convertibles :PRICE RANGE: R6,900 - R15,000.
-<br>
-Limousines :PRICE RANGE: R5,000 - R9,000.
-<br>
-Sports Cars :PRICE RANGE: R8 500 - R20,800.
+    body {
+      background-image: url("images/mercedesAmg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-light);
+    }
 
-         </h2>
-  <h1 style="background-color: whitesmoke;">
-    Car Brands We OFFER:
-1.Mercedes-benz
-2.Audi
-3.Bently
-4.Alfa Romeo
-5.Jagur
-6.Aston Martin
-7.BMW
-8.Porche
-  </h1>  
-       </b>
-         </div>
-      </body>
-</html>     
+    .menu {
+      background-color: var(--primary-dark);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: var(--box-shadow);
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: var(--text-dark);
+      background-color: var(--text-light);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .menu ul li a:hover {
+      background-color: var(--text-dark);
+      color: var(--text-light);
+    }
+
+    h1.main_heading {
+      background-color: var(--primary);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 20px;
+      font-size: 2.5rem;
+      margin: 50px auto 30px;
+      width: fit-content;
+      border-radius: 50px;
+      box-shadow: var(--box-shadow);
+    }
+
+    .content-section {
+      max-width: 1000px;
+      margin: auto;
+      background-color: var(--bg-overlay);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: var(--box-shadow);
+    }
+
+    .content-section h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .content-section p,
+    .price-list p,
+    .brands ul li {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .brands ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1.main_heading {
+        font-size: 2rem;
+        padding: 15px;
+      }
+
+      .content-section {
+        padding: 20px;
+      }
+
+      .menu ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Us.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Enquiry.html">Enquiry</a></li>
+      <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  
+  <h1 class="main_heading">SERVICES</h1>
+
+  
+  <div class="content-section">
+    <h2>🔧 Types of Cars We Offer</h2>
+    <p>
+      <strong>KDB Luxurious Cars: Premium Price List</strong><br>
+      <em>“Where Elegance Meets Performance”</em><br>
+      <strong>Currency:</strong> ZAR<br>
+      <strong>Price Range:</strong> R4,900 - R20,800
+    </p>
+
+    <div class="price-list">
+      <p><strong>SUVs:</strong> R4,900 - R9,000</p>
+      <p><strong>Coupes:</strong> R5,900 - R11,000</p>
+      <p><strong>Convertibles:</strong> R6,900 - R15,000</p>
+      <p><strong>Limousines:</strong> R5,000 - R9,000</p>
+      <p><strong>Sports Cars:</strong> R8,500 - R20,800</p>
+    </div>
+
+    <div class="brands">
+      <h2>🚗 Car Brands We Offer</h2>
+      <ul>
+        <li>1. Mercedes-Benz</li>
+        <li>2. Audi</li>
+        <li>3. Bentley</li>
+        <li>4. Alfa Romeo</li>
+        <li>5. Jaguar</li>
+        <li>6. Aston Martin</li>
+        <li>7. BMW</li>
+        <li>8. Porsche</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

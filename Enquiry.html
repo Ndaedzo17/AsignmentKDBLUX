@@ -1,117 +1,223 @@
-<html>
-     <head> 
-        <title >KDB Luxurios Cars| About us</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KDB Luxurious Cars | Enquiry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --primary-color: aquamarine;
+      --text-color: #ffffff;
+      --bg-overlay: rgba(0, 0, 0, 0.75);
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        <link rel="stylesheet" href="css/theme.css">
-        
-        <link rel="stylesheet" href="style.css">
-        
-        <style>
-          body{
-            background-image: url("images/backContact.jpg");
-            background-repeat: no-repeat;
-            background-position:center ;
-            background-attachment: fixed;
-            background-size: cover;
-          }
-        
-          
-          
-          input{
-            margin-bottom: 20px;
-            padding: 10px;
-          }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        
-        </style>
-      </head>
-      <body>
-        <div class="menu">
-          <ul>
+    body {
+      font-family: var(--font);
+      background: url("images/srt.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-color);
+    }
 
-            <li> <a href="index.html">Home</a></li>
-            <li>  <a href="About Us.html">About us</a></li>
-            <li>  <a href="Services.html">Services</a></li>
-            <li> <a href="Enquiry.html">Enquiry</a></li>
-            <li>  <a href="Contact Us.html">Contact Us</a></li>
+    .overlay {
+      background-color: var(--bg-overlay);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
 
-          </ul>
-        </div>
+    .menu {
+      background-color: var(--primary-color);
+      padding: 15px 0;
+      text-align: center;
+    }
 
-        <h1 class="main_heading"><div style="background-color:  aquamarine" id="header"> ENQUIRY</div></h1>
-        <div>
-      <form >
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .menu ul li a:hover {
+      background-color: black;
+      color: var(--primary-color);
+    }
+
+    h1 {
+      text-align: center;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin: 40px auto 30px auto;
+      width: fit-content;
+      border-radius: 10px;
+      font-size: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .radio-group {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: var(--primary-color);
+      color: black;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-right: 10px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: black;
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        padding: 15px;
+      }
+
+      .menu ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
     
-        <label for="fname"> Firt name:</label>
-         <input type="text" id="fname" name="fname" placeholder="KDBLuxurioscars" required>
-      </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </div>
 
-      <br>
-
-      <div>
-         <label for="lname"> Last name:</label>
-         <input type="text" id="lname" name="lname" placeholder="KDBLuxurioscars" required> 
-      </div>
-      <br>
-      <div >
-        <label for="email"> Email:</label>
-        <input type="email" id="email" name="email" placeholder="KDBLuxurioscars@gmail.com"required>
-      </div>
-      <br>
-      <div >
-        <label for="Phone"> Phone no:</label>
-        <input type="tel" id="Phone" name="Phone" placeholder="(+27)"required>
-      </div>
-      <br>
-      <div >
-        <label for="Location"> Location:</label>
-        <input type="text" id="Location" name="Location" placeholder="Polokwane" required>
-      </div>
-        <br>
-      <div >
-        <label for="bdate"> Birthdate:</label>
-        <input type="date" id="bdate" name="bdate" required >
-      </div>
-      
-       <br>
-      <div>
-        <label for="title">TITLE </label>
-
-        <label for="Mr">Mr.</label>
-        <input type="radio" id="Mr." name="title" value="Mr." required>>
-
-        <labe for="Miss.">Miss</label>
-        <input type="radio" id="Miss." name="title" value="Miss." required>>
-
-        <labe for="Mrs.">Mrs.</label>
-          <input type="radio" id="Mrs." name="title" value="Mrs." required>>
-      </div>
-
-      <br>
-
-       <div>
-          <label for="Payment">Payment :</label>
-          <select id="Payment" name="Payment" required>
-             <option value="Visa">Visa</option>
-             <option value="Mastercard">Mastercard</option>
-             <option value="Transfer">Transfer</option>
-             <option value="Buynow,Pay later">Buynow,Pay later</option>
-          </select>
-       </div>
-
-       <br>
-       
-       <div>
-          <input type="reset">
-       </div>
-
-       <br>
-
-       <div>
-           <input type="submit">
-       </div>
     
-      </form>
-      </body>
+    <h1>ENQUIRY</h1>
+
+    
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" placeholder="KDB" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" placeholder="Lux" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="KDBLuxuriosCars@email.com" required>
+
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+27 000 000 0000" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="Polokwane" required>
+
+      <label for="bdate">Birthdate:</label>
+      <input type="date" id="bdate" name="bdate" required>
+
+      <label>Title:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="title" value="Mr." required> Mr.</label>
+        <label><input type="radio" name="title" value="Miss." required> Miss.</label>
+        <label><input type="radio" name="title" value="Mrs." required> Mrs.</label>
+      </div>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="Visa">Visa</option>
+        <option value="Mastercard">Mastercard</option>
+        <option value="Transfer">Transfer</option>
+        <option value="Buynow,Pay later">Buy Now, Pay Later</option>
+      </select>
+
+      <div id="responseMessage" style="max-width: 600px; margin: 20px auto; background: rgba(255, 255, 255, 0.2); color: #fff; padding: 20px; border-radius: 10px; display: none; font-weight: bold;"></div>
+
+
+      <label for="enquiryType">Enquiry Type:</label>
+<select id="enquiryType" name="enquiryType" required>
+  <option value="" disabled selected>Select enquiry type</option>
+  <option value="services">Services</option>
+  <option value="products">Products</option>
+  <option value="volunteer">Volunteer</option>
+  <option value="sponsor">Sponsor</option>
+</select>
+
+
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
 </html>
-                 

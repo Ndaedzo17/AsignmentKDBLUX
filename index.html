@@ -1,50 +1,171 @@
-<html>   
-     <head> 
-        <title >KDB Luxurios Cars| index.html</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KDB Luxurious Cars | Home</title>
 
-        <link rel="stylesheet" href="css/theme.css">
-        
-        <link rel="stylesheet" href="style.css">
-        
-        <style>
-          body{
-            background-image: url("images/indexGwagon.jpg");
-            background-repeat: no-repeat;
-            background-position:center ;
-            background-attachment: fixed;
-            background-size: cover;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="menu">
-          <ul>
+  
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="style.css">
 
-       <li> <a href="index.html">Home</a></li>
-       <li> <a href="About Us.html">About us</a></li>
-       <li> <a href="Services.html">Services</a></li>
-       <li> <a href="Enquiry.html">Enquiry</a></li>
-       <li> <a href="Contact Us.html">Contact Us</a></li>
+  
+  <style>
+    
 
-          </ul>
+    body {
+      background-image: url("images/mercedes-back.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-light);
+    }
+
+    
+
+    
+    .slideshow-container {
+      position: relative;
+      max-width: 900px;
+      margin: 50px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--primary-dark);
+      color: var(--text-dark);
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: var(--text-dark);
+      color: var(--text-light);
+    }
+
+    .prev { left: 15px; }
+    .next { right: 15px; }
+
+    footer {
+      background-color: var(--primary-dark);
+      color: var(--text-dark);
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+      font-weight: bold;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .intro-section {
+        padding: 20px;
+      }
+
+      h1.main_heading {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">KdBLUX</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="main_heading">HOME</h1>
+
+    <section class="intro-section">
+      <h2>Welcome to KDB Luxurious Cars</h2>
+      <p>
+        Drive in Style, Arrive in Luxury. At KDB Luxurious Cars, we believe every journey should be an experience of elegance, comfort, and class.
+      </p>
+
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="images/image1.jpg" alt="Luxury Car 1">
+        </div>
+        <div class="slide fade">
+          <img src="images/image2.jpg" alt="Luxury Car 2">
+        </div>
+        <div class="slide fade">
+          <img src="images/image3.jpg" alt="Luxury Car 3">
+        </div>
+        <div class="slide fade">
+          <img src="images/indexGwagon.jpg" alt="Luxury Car 4">
+        </div>
+        <div class="slide fade">
+          <img src="images/Rolls.jpg" alt="Luxury Car 5">
+        </div>
+        <div class="slide fade">
+          <img src="images/porsche.jpg" alt="Luxury Car 6">
+        </div>
+        <div class="slide fade">
+          <img src="images/maserati.jpg" alt="Luxury Car 7">
         </div>
 
-        <h1 class="main_heading"><div style="background-color: aquamarine;"  id="header">KDB Luxurios Cars </div></h1>
 
-        
-        <div  >
-   <b> <p >  <h3 style="color: whitesmoke; " > <b><h1> Welcome to<br> KDB Luxurious Cars : Drive in Style, Arrive in Luxury</h1>
-At KDB Luxurious Cars,</b><br> we believe every journey should be an experience of elegance, comfort, and class.
-<br>
- Whether you're looking to make a grand<br> entrance at a special event, impress clients,
-  or simply enjoy the thrill of a high-end ride,<br> we offer the perfect fleet of 
-  premium vehicles to suit your needs.</p></h3></b>
-        </div>
-        <br>
-        <div  style="float: left;margin-left: 590px;">
-          <br>
-        <div style="float: right;width: 80px;"><img src="images/mercleft2.jpg"></div>
 
-        </div>
-      </body>
+
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+
+      <p>
+        Whether you're looking to make a grand entrance at a special event, impress clients, or simply enjoy the thrill of a high-end ride, we offer the perfect fleet of premium vehicles to suit your needs.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 KDB Luxurious Cars. All rights reserved.
+  </footer>
+
+  <script src="index.js"></script>
+</body>
 </html>
+
+        

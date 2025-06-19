@@ -1,48 +1,236 @@
-<html>
-    <head>
-        <title>KDB Luxurios Cars | contactus.hyml</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KDB Luxurious Cars | Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-color: aquamarine;
+      --text-color: #ffffff;
+      --background-overlay: rgba(0, 0, 0, 0.7);
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        <link rel="stylesheet" href="css/theme.css">
-        
-        <link rel="stylesheet" href="style.css">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        <style>
-            body{
-              background-image: url("images/backContact.jpg");
-              background-repeat: no-repeat;
-              background-position:center ;
-              background-attachment: fixed;
-              background-size: cover;
-            }
-          </style>
-    </head>
-    <body>
-      <div class="menu">
-        <ul>
+    body {
+      font-family: var(--font-family);
+      background: url("images/backContact.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-color);
+    }
 
-          <li> <a href="index.html">Home</a></li>
-          <li><a href="About Us.html">About us</a></li>
-          <li> <a href="Services.html">Services</a></li>
-          <li> <a href="Enquiry.html">Enquiry</a></li>
-          <li> <a href="Contact Us.html">Contact Us</a></li>
+    .overlay {
+      background-color: var(--background-overlay);
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    .menu {
+      background-color: var(--main-color);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .menu ul li a:hover {
+      background-color: black;
+      color: var(--main-color);
+    }
+
+    h1 {
+      text-align: center;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 12px;
+      width: fit-content;
+      margin: 40px auto 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: var(--main-color);
+      margin-bottom: 30px;
+    }
+
+    .contact-content {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-content img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contact-content p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    form {
+      margin-top: 30px;
+      text-align: left;
+      color: white;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      background: rgba(255, 255, 255, 0.9);
+      color: #000;
+      font-size: 1rem;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: var(--main-color);
+      color: black;
+      padding: 12px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: black;
+      color: var(--main-color);
+    }
+
+    @media (max-width: 600px) {
+      .menu ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .contact-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+
+
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <h1>Contact Us</h1>
+    <h2>Reach out to our dedicated team for any inquiries or assistance you need.</h2>
+
+    <div class="contact-content">
+      <img src="images/MercContact.jpg" alt="Contact Image">
+      <p><strong>Email:</strong> KDB@Luxurios.com</p>
+      <p><strong>Locations:</strong> 123 Dave St, Thohoyandou | 13 Bafana St, Polokwane</p>
+      <p><strong>Website:</strong> <a href="#">www.KDBLuxurioscars.com</a></p>
+      <p><strong>Facebook:</strong> <a href="#">facebook.com/KDBLuxuriosCars</a></p>
+      <p><strong>Phone:</strong> +105-789-0980 | +27 698 0514</p>
+
       
-        </ul>
-      </div>
-      
-      <h1 class="main_heading"><div style="background-color: aquamarine;"  id="header" >CONTACT US</div></h1>
-      <p  class="main_heading"><h2 id="p2">Reach Out To Our Dedicated Team For Any Inquiries, Assistance, Or Information You Need.</h2></p>
-      <br>
-      <div >
-        <img src="images/MercContact.jpg" height="250px" id="img1">      
-      <p id="p1" class="main_heading"> KDB@Luxurios.com </p>
-      <p id="p1" class="main_heading">123 Dave St,Thohoyandou /13 Bafana St,Polokwane</p>     
-      <p id="p1" class="main_heading">🌐 www.KDBLuxurioscars.com</p>
-      <p id="p1" class="main_heading">📘 Facebook.com/KDB Luxurios Cars</p>
-      <p id="p1" class="main_heading">☎️ TEL: +105-789-0980 <br>
-                                          TEL: +27 698 0514</p>
-      </div>                        
-      <br>
-       
+      <form id="contactForm" onsubmit="return sendEmail();">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Your Name">
 
-    </body>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="KDBLuxuriosCars@email.com">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+27 600 123 4856">
+
+        <label for="messageType">Type of Message:</label>
+        <select id="messageType" name="messageType" required>
+          <option value="">-- Select --</option>
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Car Booking">Car Booking</option>
+          <option value="Complaint">Complaint</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+
+        <input type="submit" value="Send Email">
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function sendEmail() {
+      const name = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const messageType = document.getElementById('messageType').value;
+      const message = document.getElementById('message').value;
+
+      const subject = encodeURIComponent(`KDB Website Contact: ${messageType}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+
+      const mailtoLink = `mailto:KDB@Luxurios.com?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
+
+      return false; 
+    }
+  </script>
+</body>
 </html>

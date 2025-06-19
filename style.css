@@ -1,96 +1,164 @@
-h1{
-    font-family: verdana;
-    border-style: solid;
-    border-width: 6px ;
-    border-color: aquamarine;
-    border-radius: 20px;
-     text-shadow: 3px 3px 5px orange;
-}
-
-p{
-    font-family: 'Lucida Sans', "courier new" ;
-    font-size: 25px ;
+:root {
+    --primary: aquamarine;
+    --primary-dark: #24ccc4;
+    --text-light: #ffffff;
+    --text-dark: #121212;
+    --bg-dark: rgba(0, 0, 0, 0.6);
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: var(--bg-dark);
+    padding: 20px 0;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .logo {
+    font-size: 2rem;
     font-weight: bold;
-    font-style: italic;
-
-}
-
-h3{ 
-    font-family: 'Lucida Sans', "courier new" ;
-    font-size: 25px ;
-    font-weight: bold;
-    font-style: italic;
-    border-bottom: 3px solid aquamarine;
-}
-#p1{
-    background-color: rgb(255, 94, 0);
-    border-radius:15px ;
-}
-#p2{
-    background-color:white;
-}
-
-.rectangle{
-    border: 5px solid;
-    font-size: medium;
-    width: 20px;
-    height: 20px;
-}
-#rectangle1{
-    background-color: aquamarine;
-    margin-left:auto ;
-}
-
-.box{
-    border: 100px solid;
-    font-size: 10em;
-    width: 250px; 
-    height:250px ;
-}
-
-ul{
-    float: left;
+    color: var(--primary);
+    text-align: center;
+  }
+  
+  nav.navbar {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-ul li{
-     list-style: none;
-     margin-left: 90px;
-     margin-top: 0px;
-     font-size: 20px;
-}
-ul li a{
-       text-decoration: none;
-       color:  orangered;
-       font-family: Arial;
-       font-weight: bolder;
-       transition: 0.4s ease-in-out;
-}
-
-
-ul li a:hover{
-        color: black;
-        
-}
-
-@media  (min-width:1440px) {
-        body{
-            font-size: larger;
-            
-        }
-}
-
-@media  (min-width:768px) {
-    body{
-        font-size: medium;
-        
+    background-color: var(--primary-dark);
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--text-light);
+    transition: 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+  }
+  
+  h1.main_heading {
+    background-color: var(--primary);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 20px;
+    font-size: 2.8rem;
+    margin: 40px auto 20px;
+    width: fit-content;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .intro-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--bg-dark);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+  }
+  
+  .intro-section h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  
+  .intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .slideshow-container {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--primary-dark);
+    color: var(--text-dark);
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+  }
+  
+  .prev { left: 15px; }
+  .next { right: 15px; }
+  
+  footer {
+    background-color: var(--primary-dark);
+    color: var(--text-dark);
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: bold;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
     }
-}
-
-@media (min-width:600px) {
-    body{
-        font-size:medium ;
-        
+  
+    .intro-section {
+      padding: 20px;
     }
-}
+  
+    h1.main_heading {
+      font-size: 2rem;
+    }
+  }
